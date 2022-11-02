@@ -16,16 +16,15 @@
 // Components
 //---------------------------------
 
-//@import "components/product-card-banner";
+@import "components/custom-input";
 
 
 // Blocks
 //---------------------------------
 @import "blocks/bg-overlay";
 @import "blocks/button";
-@import "blocks/contacts-block";
+@import "blocks/icons-list";
 @import "blocks/header";
 @import "blocks/main-nav";
 @import "blocks/mobile-nav";
-@import "blocks/promo-links";
-@import "blocks/search-panel";
+@import "blocks/search";
