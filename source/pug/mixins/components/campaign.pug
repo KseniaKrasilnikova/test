@@ -1,6 +1,10 @@
 mixin campaign()
   section.campaign
-    h2.visually-hidden
-    .campaign__img
-      +picture("content", "smile", "jpg", 1275, 1230, "Улыбка")
-    .campaign__text нальная гигиена зубов + отбеливание системой Opalescence всего за 9900 руб.
+    .container
+      h2.visually-hidden
+      .campaign__layout
+        .campaign__img
+          +picture("content", "smile", "jpg", 1275, 1230, "Улыбка")
+        .campaign__text нальная гигиена зубов + отбеливание системой Opalescence всего за 9900 руб.
+
+        .campaign__form
