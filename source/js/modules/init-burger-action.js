@@ -5,7 +5,7 @@ const openButton = document.querySelector('.btn-open-menu');
 const closeButton = document.querySelector('.btn-close-menu');
 const mobileMenu = document.querySelector('.mobile-nav__wrapper');
 const overlay = document.querySelector('.bg-overlay');
-const header = document.querySelector('.mobile-nav');
+const header = document.querySelector('.header');
 const scrollLock = new ScrollLock();
 const active = 'active';
 
@@ -18,6 +18,7 @@ const openBurgerMenu = () => {
   overlay.classList.add(active);
   header.classList.add('mobile-active');
   mobileMenu.classList.add(active);
+
 };
 
 const closeMenu = () => {
