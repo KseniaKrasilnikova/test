@@ -1,4 +1,5 @@
 import {initBurger} from './modules/init-burger-action';
+import {initFormValidate} from './modules/form/init-form-validate';
 
 // ---------------------------------
 
@@ -11,6 +12,7 @@ window.addEventListener('DOMContentLoaded', () => {
   // ---------------------------------
   window.addEventListener('load', () => {
     initBurger();
+    initFormValidate();
   });
 });
 
