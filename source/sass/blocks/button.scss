@@ -31,4 +31,9 @@
   &--radius {
     border-radius: 5px;
   }
+
+  &--shrink:active {
+    transition: none;
+    transform: scale(.95);
+  }
 }
