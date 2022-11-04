@@ -1,0 +1,88 @@
+mixin advantages()
+  -
+    const opalescenceList = [
+      {
+        text: "Безопасность.",
+      },
+      {
+        text: "Нейтральный рН геля не изменяет структуру зуба.",
+      },
+      {
+        text: "Вода в составе геля не допускает обезвоживания зуба.",
+      },
+      {
+        text: "Защита десен.",
+      },
+      {
+        text: "Содержание фторидов уменьшает риск возникновения кариеса.",
+      },
+      {
+        text: "Быстрый и стойкий результат.",
+      },
+    ]
+
+    const priceList = [
+      {
+        text: "профессиональная чистка зубов",
+      },
+      {
+        text: "отбеливание зубов системой Opalescence",
+      },
+    ]
+    const reviewList = [
+      {
+        text: "Сегодня была в вашей клинике, мне провели процедуру по снятию зубных отложений",
+      },
+      {
+        text: "В субботу была на чистке зубов (камни, налет)",
+      },
+    ]
+    const advantagesList = [
+      {
+        text: "Гарантированное получение помощи при острой боли в день боли в день обращения",
+        svg: "icon-price",
+      },
+      {
+        text: "Гарантия на все виды стоматологических услуг",
+        svg: "icon-idea",
+      },
+      {
+        text: "Обслуживание по ДМС",
+        svg: "icon-prize",
+      },
+    ]
+  section.advantages
+    .container
+      h2.visually-hidden
+      .advantages__layout
+        .advantages__left
+          .advantages__list-wrapper
+            h3.advantages__title Преимущества Opalescence:
+            ul.advantages__list
+              each item in opalescenceList
+                li.advantages__list-item!= item.text
+          .advantages__slider
+            h3.advantages__title Наши специалисты
+            // + swiper
+        .advantages__center
+          .advantages__list-wrapper
+            h3.advantages__title В стоимость входит
+            .advantages__bg
+              ul.advantages__list
+                each item in priceList
+                  li.advantages__list-item!= item.text
+          .advantages__list-wrapper
+            h3.advantages__title Отзывы о чистке зубов
+            ul.advantages__list
+              each item in reviewList
+                li.advantages__list-item.advantages__list-link
+                  a(href="#", aria-lable="Прочитать отзыв")!= item.text
+
+        .advantages__right
+          h3.advantages__title Наши преимущества
+          ul.advantages__list
+            each item in advantagesList
+              li.advantages__list-item
+                .advantages__icon
+                  +icon(item.svg, 407, 465)
+                p.advantages__item-text!=item.text

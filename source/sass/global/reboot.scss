@@ -34,8 +34,14 @@ body {
 }
 
 a {
-  color: $color-default-black;
+  color: $color-navy-blue;
   text-decoration: none;
+  transition: color $trans-default;
+
+  &:hover,
+  &:focus {
+    color: $color-dodger-blue-2;
+  }
 }
 
 img,

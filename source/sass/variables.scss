@@ -14,9 +14,10 @@ $color-light-grey:                #d7d7d7;
 $color-solitude:                  #edeff2;
 $color-solitude-2:                #e0e3e8;
 $color-free-speech-red:           #d80909;
-$color-free-speech-red-2:           #d90800;
+$color-free-speech-red-2:         #d90800;
 $color-navy-blue:                 #0051d4;
 $color-dodger-blue:               #0866ff;
+$color-dodger-blue-2:               #3b86ff;
 
 // Typography
 //---------------------------------
@@ -27,7 +28,7 @@ $font-family--commissioner:        "Commissioner", "Arial", sans-serif;
 //---------------------------------
 
 $tf-default: ease;
-$trans-default: 0.3s $tf-default;
+$trans-default: 0.25s $tf-default;
 
 // Viewports
 //---------------------------------
