@@ -4,8 +4,8 @@
 
 .advantages__layout {
   display: grid;
-  grid-template-columns:  0.8fr 1.4fr 1.2fr;
-  column-gap: 24px;
+  grid-template-columns: 1.1fr 1fr 1.1fr;
+  column-gap: 14px;
 
   @include vp--1023 {
     grid-template-columns: 0.8fr 1fr;
@@ -32,14 +32,22 @@
 }
 
 .advantages__list {
-  @include reset-list;
+  margin: 0;
+  padding-left: 16px;
+}
+
+.advantages__list-with-icons {
+  list-style: none;
+  li {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    column-gap: 10px;
+  }
 }
 
 .advantages__list-item {
-  display: flex;
-  flex-wrap: nowrap;
-  align-items: center;
-  column-gap: 10px;
+  margin-bottom: 6px;
 }
 
 .advantages__bg {
