@@ -51,6 +51,32 @@ mixin advantages()
         svg: "icon-prize",
       },
     ]
+    const doctorsSliderData = [
+      {
+        img: "doctor-1",
+        width: 1242,
+        height: 1218,
+        text: "Иванов Иван Иванович"
+      },
+      {
+        img: "doctor-2",
+        width: 800,
+        height: 1200,
+        text: "Петров Петр Петрович"
+      },
+      {
+        img: "doctor-1",
+        width: 1242,
+        height: 1218,
+        text: "Петров Петр Петрович"
+      },
+      {
+        img: "doctor-2",
+        width: 800,
+        height: 1200,
+        text: "Петров Петр Петрович"
+      },
+    ]
   section.advantages
     .container
       h2.visually-hidden
@@ -63,7 +89,7 @@ mixin advantages()
                 li.advantages__list-item!= item.text
           .advantages__slider
             h3.advantages__title Наши специалисты
-            // + swiper
+            +doctors-slider(doctorsSliderData)
         .advantages__center
           .advantages__list-wrapper
             h3.advantages__title В стоимость входит
