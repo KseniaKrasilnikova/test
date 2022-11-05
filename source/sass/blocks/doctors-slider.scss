@@ -14,6 +14,10 @@
   @include vp--1023 {
     width: 100%;
   }
+
+  @include vp--767 {
+    overflow: visible;
+  }
 }
 
 .doctors-slider__list {
@@ -25,6 +29,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 40px;
 }
 
 .doctors-slider__slide {
@@ -39,8 +44,7 @@
     top: 50%;
     left: 50%;
     min-width: 100%;
-    height: 80%;
-    //min-height: 100%;
+    height: 100%;
     object-fit: cover;
     transform: translateX(-50%) translateY(-50%);
 
@@ -59,7 +63,7 @@
   position: absolute;
   z-index: 10;
   top: 0;
-  bottom: 0;
+  bottom: 25px;
   margin: auto;
   width: 30px;
   height: 30px;
@@ -110,7 +114,7 @@
   position: absolute;
   display: block;
   left: 0;
-  bottom: 0;
+  bottom: -30px;
   right: 0;
   margin: 0;
   z-index: 100;
