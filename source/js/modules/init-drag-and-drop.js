@@ -9,7 +9,7 @@ const initDragAndDrop = () => {
   listsArray.forEach((list) => {
     new Sortable(list, {
       handle: '.js-drag-handle',
-      animation: 150,
+      // animation: 150,
     });
   })
 }

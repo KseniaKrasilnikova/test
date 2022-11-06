@@ -3,7 +3,6 @@
 }
 
 .advantages__layout {
-  @include reset-list;
   display: grid;
   grid-template-columns: 1.1fr 1fr 1.1fr;
   column-gap: 14px;

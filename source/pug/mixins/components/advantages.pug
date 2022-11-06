@@ -80,9 +80,9 @@ mixin advantages()
   section.advantages
     .container
       h2.visually-hidden Преимущества
-      ul.advantages__layout.js-drag-container
+      .advantages__layout.js-drag-container
 
-        li.advantages__left
+        .advantages__left
           .advantages__list-wrapper
             h3.advantages__title.js-drag-handle Преимущества Opalescence:
             ul.advantages__list
@@ -92,7 +92,7 @@ mixin advantages()
             h3.advantages__title Наши специалисты
             +doctors-slider(doctorsSliderData)
 
-        li.advantages__center
+        .advantages__center
           .advantages__list-wrapper
             h3.advantages__title.js-drag-handle В стоимость входит
             .advantages__bg
@@ -106,7 +106,7 @@ mixin advantages()
                 li.advantages__list-item.advantages__list-link
                   a(href="#", aria-label="Прочитать отзыв")!= item.text
 
-        li.advantages__right
+        .advantages__right
           h3.advantages__title.js-drag-handle Наши преимущества
           ul.advantages__list.advantages__list-with-icons
             each item in advantagesList
