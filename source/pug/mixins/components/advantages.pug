@@ -79,7 +79,7 @@ mixin advantages()
     ]
   section.advantages
     .container
-      h2.visually-hidden
+      h2.visually-hidden Преимущества
       .advantages__layout
         .advantages__left
           .advantages__list-wrapper
@@ -102,7 +102,7 @@ mixin advantages()
             ul.advantages__list
               each item in reviewList
                 li.advantages__list-item.advantages__list-link
-                  a(href="#", aria-lable="Прочитать отзыв")!= item.text
+                  a(href="#", aria-label="Прочитать отзыв")!= item.text
 
         .advantages__right
           h3.advantages__title Наши преимущества
